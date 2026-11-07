@@ -1,0 +1,208 @@
+tyle · CSS
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffa254;
+    min-height: 100vh;
+    padding: 0 20px 40px;
+    color: #2c3e50;
+}
+ 
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 0 20px;
+}
+ 
+/* ---------- Contenedor principal ---------- */
+.container {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+ 
+/* ---------- Formulario ---------- */
+form {
+    flex: 1;
+    padding: 36px 24px 24px;
+}
+ 
+form > label,
+legend {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1f2d3a;
+    margin-bottom: 8px;
+}
+ 
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 14px;
+}
+ 
+select {
+    border-color: #ffa254;
+    cursor: pointer;
+}
+ 
+select:focus,
+input[type="number"]:focus {
+    outline: none;
+    border-color: #ff7a3d;
+    box-shadow: 0 0 0 3px rgba(255, 122, 61, 0.2);
+}
+ 
+fieldset {
+    border: none;
+    margin-bottom: 14px;
+}
+ 
+legend {
+    padding: 0;
+}
+ 
+/* ---------- Opciones en cuadrícula ---------- */
+.opciones,
+.ingredientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+ 
+.opciones label,
+.ingredientes label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #f8f9fa;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #444;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+ 
+.opciones label:hover,
+.ingredientes label:hover {
+    background: #ffe9d6;
+}
+ 
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #ff7a3d;
+    cursor: pointer;
+}
+ 
+/* ---------- Domicilio ---------- */
+.domicilio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #1f2d3a;
+    margin: 4px 0 14px;
+    cursor: pointer;
+}
+ 
+/* ---------- Total ---------- */
+.total {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+}
+ 
+/* ---------- Botón ---------- */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff9a56, #ff6b35);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+ 
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(255, 107, 53, 0.4);
+}
+ 
+button:active {
+    transform: translateY(0);
+}
+ 
+/* ---------- Galería ---------- */
+.galeria {
+    width: 310px;
+    background: #f4f5f7;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+.galeria img {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+}
+ 
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+ 
+    .galeria {
+        width: 100%;
+        flex-direction: row;
+    }
+ 
+    .galeria img {
+        height: 140px;
+        min-width: 0;
+    }
+}
+ 
+@media (max-width: 600px) {
+    .opciones,
+    .ingredientes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+ 
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+ 

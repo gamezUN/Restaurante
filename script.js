@@ -1,4 +1,4 @@
-
+console.log("script cargado");
 const formulario = document.getElementById("pedidoForm");
 const totalTexto = document.querySelector(".total");
 

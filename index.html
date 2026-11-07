@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,115 +5,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedido de Baguettes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<script src="script.js"></script>
 
-<body>
+</body>
 
-    <h1>Realiza tu pedido de Baguettes</h1>
+</html>
 
-    <div class="container">
+<h1>Realiza tu pedido de Baguettes</h1>
 
-        <form id="pedidoForm">
+<div class="container">
 
-            <label for="especialidad">Especialidad:</label>
+    <form id="pedidoForm">
 
-            <select name="especialidad" id="especialidad">
-                <option value="80">Clásica - $80.00 MXN</option>
-                <option value="85">BBQ - $85.00 MXN</option>
-                <option value="90">Tocino - $90.00 MXN</option>
-                <option value="90">Doble Jamón - $90.00 MXN</option>
-                <option value="85">Hawaiana - $85.00 MXN</option>
-            </select>
+        <label for="especialidad">Especialidad:</label>
 
-            <fieldset>
-                <legend>Tipo de pan:</legend>
+        <select name="especialidad" id="especialidad">
+            <option value="80">Clásica - $80.00 MXN</option>
+            <option value="85">BBQ - $85.00 MXN</option>
+            <option value="90">Tocino - $90.00 MXN</option>
+            <option value="90">Doble Jamón - $90.00 MXN</option>
+            <option value="85">Hawaiana - $85.00 MXN</option>
+        </select>
 
-                <div class="opciones">
-                    <label>
-                        <input type="radio" name="pan" value="0" checked>
-                        Clásico
-                    </label>
+        <fieldset>
+            <legend>Tipo de pan:</legend>
 
-                    <label>
-                        <input type="radio" name="pan" value="20">
-                        Con Ajonjolí (+$20 MXN)
-                    </label>
+            <div class="opciones">
+                <label>
+                    <input type="radio" name="pan" value="0" checked>
+                    Clásico
+                </label>
 
-                    <label>
-                        <input type="radio" name="pan" value="20">
-                        Integral (+$20 MXN)
-                    </label>
+                <label>
+                    <input type="radio" name="pan" value="20">
+                    Con Ajonjolí (+$20 MXN)
+                </label>
 
-                    <label>
-                        <input type="radio" name="pan" value="50">
-                        Brioche (+$50 MXN)
-                    </label>
-                </div>
-            </fieldset>
+                <label>
+                    <input type="radio" name="pan" value="20">
+                    Integral (+$20 MXN)
+                </label>
 
-            <fieldset>
-                <legend>Ingredientes adicionales ($5.00 MXN c/u):</legend>
+                <label>
+                    <input type="radio" name="pan" value="50">
+                    Brioche (+$50 MXN)
+                </label>
+            </div>
+        </fieldset>
 
-                <div class="ingredientes">
+        <fieldset>
+            <legend>Ingredientes adicionales ($5.00 MXN c/u):</legend>
 
-                    <label><input type="checkbox" name="ingrediente"> Queso</label>
-                    <label><input type="checkbox" name="ingrediente"> Lechuga</label>
-                    <label><input type="checkbox" name="ingrediente"> Jitomate</label>
-                    <label><input type="checkbox" name="ingrediente"> Cebolla</label>
-                    <label><input type="checkbox" name="ingrediente"> Jalapeño</label>
-                    <label><input type="checkbox" name="ingrediente"> Huevo</label>
-                    <label><input type="checkbox" name="ingrediente"> Pepino</label>
-                    <label><input type="checkbox" name="ingrediente"> Champiñones</label>
-                    <label><input type="checkbox" name="ingrediente"> Tocino extra</label>
-                    <label><input type="checkbox" name="ingrediente"> Doble queso</label>
-                    <label><input type="checkbox" name="ingrediente"> Piña</label>
-                    <label><input type="checkbox" name="ingrediente"> Guacamole</label>
-                    <label><input type="checkbox" name="ingrediente"> Salsa BBQ</label>
-                    <label><input type="checkbox" name="ingrediente"> Aderezo Chipotle</label>
-                    <label><input type="checkbox" name="ingrediente"> Mayonesa</label>
-                    <label><input type="checkbox" name="ingrediente"> Mostaza</label>
-                    <label><input type="checkbox" name="ingrediente"> Ketchup</label>
-                    <label><input type="checkbox" name="ingrediente"> Pepperoni</label>
-                    <label><input type="checkbox" name="ingrediente"> Arúgula</label>
-                    <label><input type="checkbox" name="ingrediente"> Cebolla caramelizada</label>
+            <div class="ingredientes">
 
-                </div>
-            </fieldset>
+                <label><input type="checkbox" name="ingrediente"> Queso</label>
+                <label><input type="checkbox" name="ingrediente"> Lechuga</label>
+                <label><input type="checkbox" name="ingrediente"> Jitomate</label>
+                <label><input type="checkbox" name="ingrediente"> Cebolla</label>
+                <label><input type="checkbox" name="ingrediente"> Jalapeño</label>
+                <label><input type="checkbox" name="ingrediente"> Huevo</label>
+                <label><input type="checkbox" name="ingrediente"> Pepino</label>
+                <label><input type="checkbox" name="ingrediente"> Champiñones</label>
+                <label><input type="checkbox" name="ingrediente"> Tocino extra</label>
+                <label><input type="checkbox" name="ingrediente"> Doble queso</label>
+                <label><input type="checkbox" name="ingrediente"> Piña</label>
+                <label><input type="checkbox" name="ingrediente"> Guacamole</label>
+                <label><input type="checkbox" name="ingrediente"> Salsa BBQ</label>
+                <label><input type="checkbox" name="ingrediente"> Aderezo Chipotle</label>
+                <label><input type="checkbox" name="ingrediente"> Mayonesa</label>
+                <label><input type="checkbox" name="ingrediente"> Mostaza</label>
+                <label><input type="checkbox" name="ingrediente"> Ketchup</label>
+                <label><input type="checkbox" name="ingrediente"> Pepperoni</label>
+                <label><input type="checkbox" name="ingrediente"> Arúgula</label>
+                <label><input type="checkbox" name="ingrediente"> Cebolla caramelizada</label>
 
-            <label for="cantidad">Cantidad de Baguettes:</label>
+            </div>
+        </fieldset>
 
-            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+        <label for="cantidad">Cantidad de Baguettes:</label>
 
-            <label class="domicilio">
-                <input type="checkbox" name="domicilio">
-                ¿Es a domicilio? (+$30 MXN)
-            </label>
+        <input type="number" id="cantidad" name="cantidad" min="1" value="1">
 
-            <p class="total">
-                Total: $0.00 MXN
-            </p>
+        <label class="domicilio">
+            <input type="checkbox" name="domicilio">
+            ¿Es a domicilio? (+$30 MXN)
+        </label>
 
-            <button type="button">
-                Calcular Total
-            </button>
+        <p class="total">
+            Total: $0.00 MXN
+        </p>
 
-        </form>
+        <button type="submit">
+            Calcular Total
+        </button>
+    </form>
 
-        <div class="galeria">
+    <div class="galeria">
 
-            <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=800&q=80"
-                alt="Baguette con vegetales">
+        <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?auto=format&fit=crop&w=800&q=80"
+            alt="Baguette con vegetales">
 
-            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
-                alt="Sándwich preparado">
+        <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=800&q=80"
+            alt="Sándwich preparado">
 
-            <img src="https://images.unsplash.com/photo-1600454309261-3dc9b7597637?auto=format&fit=crop&w=800&q=80"
-                alt="Baguette recién preparada">
-
-        </div>
+        <img src="https://images.unsplash.com/photo-1600454309261-3dc9b7597637?auto=format&fit=crop&w=800&q=80"
+            alt="Baguette recién preparada">
 
     </div>
 
+</div>
+
+
 </body>
+
 </html>
